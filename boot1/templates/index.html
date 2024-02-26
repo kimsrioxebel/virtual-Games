@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Gamepad</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- bootstrap css -->
+    {% load static %}
+         <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<!-- Responsive-->
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body>
+
+<body>
+	<!-- header section start -->
+	<div class="header_section">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+            {% load static %}
+            <div class="logo"><a href="index.html"><img src="{% static 'images/logo.png' %}"></a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                <a>
+                </li>
+                <li class="nav-item active">  <a class="nav-link" href="{% url 'My_index' %}">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'My_about' %}">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'My_product' %}">OUR PRODUCTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'My_video' %}">VIDEO GAMES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'My_remot' %}">REMOT CONTROL</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'My_contact' %}">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="{% static 'images' %}"></a>
+                  <a class="nav-link" href="#">SIGN IN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">REGISTER</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+	</div>
+	<!-- header section end -->
+  <!-- banner section start -->
+  <div class="banner_section layout_padding">
+    <div class="container">
+      <div id="my_slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-6">
+                <h1 class="video_text">Video games</h1>
+                <h1 class="controller_text">controller</h1>
+                <p class="banner_text">As the user applies more force to the button, the resistance decreases, and more current flows through the circuit.
+                    The microcontroller again acts as an ammeter to measure the current that flows through this resistor, interprets how hard the button is pressed
+                    , and sends this information to the game.</p>
+                <div class="shop_bt"><a href="#">Shop Now</a></div>
+              </div>
+              <div class="col-md-6">
+                <div class="image_1"><img src="{% static 'images/img-1.png' %}"></div>
+            </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <h1 class="video_text">Video games</h1>
+                <h1 class="controller_text">controller</h1>
+                <p class="banner_text">As the user applies more force to the button, the resistance decreases, and more current flows through the circuit. 
+                    The microcontroller again acts as an ammeter to measure the current that flows through this resistor, interprets how hard the button is pressed,
+                    and sends this information to the game.</p>
+                <div class="shop_bt"><a href="#">Shop Now</a></div>
+              </div>
+              <div class="col-md-6">
+                <div class="image_1"><img src="{% static 'images/img-1.png' %}"></div>
+            </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <h1 class="video_text">Video games</h1>
+                <h1 class="controller_text">controller</h1>
+                <p class="banner_text">    It's more comfortable. 
+                    Simply put, everything on a controller is ergonomically designed to be right where you need it for easy access. ...
+    It's more convenient. ...
+    It facilitates greater immersion in gaming.</p>
+                <div class="shop_bt"><a href="#">Shop Now</a></div>
+              </div>
+              <div class="col-md-6">
+                <div class="image_1"><img src="{% static 'images/img-1.png' %}"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+          <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- banner section end -->
+  <!-- about section start -->
+  <div class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="image_2"><img src="{% static 'images/img-2.png' %}"></div>
+        </div>
+        <div class="col-md-6">
+          <h1 class="about_text">ABOUT</h1>
+          <p class="lorem_text">We are located at Nirobi near kill mall</p>
+          <div class="shop_bt_2"><a href="#">Shop Now</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about section end -->
+  <!-- product section start -->
+  <div class="product_section layout_padding">
+    <div class="container">
+      <div class="product_text">Our <span style="color: #5ca0e9;">products</span></div>
+      <p class="long_text">The controller has several outputs, usually controlling multiple monitors or screens.
+          The video wall screen is a coherent screen of multiple displays usually 4x4, 6x2, 8x2 or up to 172x44 arrangements. 
+          Over these screens the information can be displayed in any position and size regardless of the monitor borders.</p>
+      <div class="product_section_2">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="image_2"><img src="{% static 'images/img-3.png' %}></div>
+            <div class="price_text">Price $ <span style="color: #3a3a38;">200</span></div>
+            <h1 class="game_text">Video Game</h1>
+            <p class="long_text">Ever since its release in 2011, Minecraft has taken the world by storm. 
+                This sandbox game developed by Mojang Studios has sold over 200 million copies across various platforms including PC, mobile devices, 
+                and gaming consoles. The game allows players to explore a blocky 3D world, mine resources, and craft various items. 
+                It also features survival and creative modes, enabling players to customize their gameplay experience. .</p>
+          </div>
+          <div class="col-md-6">
+            <div class="image_2"><img src="{% static 'images/img-3.png' %}g"></div>
+            <div class="price_text">Price $ <span style="color: #3a3a38;">300</span></div>
+            <h1 class="game_text">Video Game</h1>
+            <p class="long_text">Minecraft has also helped to popularize the concept of "early access" games, where developers release unfinished games to the public for feedback and testing.
+                This approach has become increasingly common in the industry,
+                as it allows developers to engage with their audience and make improvements based on player feedback.</p>
+          </div>
+        </div>
+      </div>
+      <div class="see_main">
+        <div class="see_bt"><a href="#">See More</a></div>
+      </div>
+    </div>
+  </div>
+  <!-- product section end -->
+  <!-- video section start -->
+  <div class="video_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="video_text_2">3d video game</h1>
+          <h1 class="controller_text_2">remoto control</h1>
+          <p class="banner_text_2">In consumer electronics, a remote control can be used to operate devices such as a television set, 
+              DVD player or other digital home media appliance. A remote control can allow operation of devices that are out of convenient reach for 
+              direct operation of controls.
+              They function best when used from a short distance.</p>
+          <div class="shop_bt"><a href="#">Shop Now</a></div>
+        </div>
+        <div class="col-md-6">
+          <div class="image_4"><img src="{% static 'images/img-4.png' %}"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- video section end -->
+  <!-- testimonial section start -->
+  <div class="testimonial_section layout_padding">
+    <div class="container">
+      <h1 class="testimonial_text">Testimonial</h1>
+      <p class="ipsum_text">What our testmonials say about us</p>
+      <div class="testimonial_section_2">
+        <div class="box_main">
+          <div class="quote_icon"><img src="{% static 'images/quote-icon.png' %}"></div>
+          <p class="dolor_text">  My first experience with VR was Skyrim. I had played briefly with a friends HTC Vive. I enjoyed my time on the game so I decided to toy around with it a bit. I found that odd movements can easily cause a state of vertigo. Mounts were one of these things. So was falling of a cliff.(Stupid Giant- The jerk smacked me right off a cliff and I practically let him.)
+
+The controller I was using along with anything rapidly approaching my field of vision could scare the crap out of me if I was unprepared.(Again stupid giant). I did not get motion sickness like some people do. It was a feeling of Vertigo that could easily be mistaken as excitement.
+
+One con is that if anything is poorly drawn in the game it became much more vivid. Skyrim had a few crummy character textures that may make it less realistic up close. Another issue is that I did experience some stuttering. I would guess this is because the graphics card at the time had to render for a stereoscopic point of view rather then just a monitor.
+
+The pros are that I was less distracted from anything outside. I also didn’t strain my neck as much because I could just lean back with my controller. 
+          I would however would never try to compare it with full dive VR. It’s more like ocular headphones. While in ear headphones eliminate the need for 
+          speakers giving you an almost surround sound like effect. The VR headset had quite the same effect. In any case just as I prefer headphones over 
+          speakers I also prefer the HTC Vive over a monitor</p>
+          <div class="client_main">
+            <div class="client_left">
+              <div class="images_5"><img src="{% static 'images/img-5.png' %}"></div>
+            </div>
+            <div class="client_right">
+              <h1 class="sandy_text">Sandy Delex</h1>
+              <p class="sandy_text_1">Claireclara</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="see_main">
+        <div class="see_bt"><a href="#">See More</a></div>
+      </div>
+    </div>
+  </div>
+  <!-- testimonial section end -->
+  <!-- contact section start -->
+  <div class="contact_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="email_box">
+                    <div class="input_main">
+                       <div class="container">
+                          <form action="/action_page.php">
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Name" name="Name">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Email" name="Name">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Phone Number" name="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+                            </div>
+                          </form>   
+                       </div> 
+                        <div class="main_bt"><a href="#">SEND</a></div>                  
+                    </div>
+                 </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image_6"><img src="{% static 'images/img-6.png' %}"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- contact section end -->
+  <!-- footer section start -->
+  <div class="section_footer ">
+      <div class="container"> 
+          <div class="footer_section_2">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                  <h2 class="account_text">About Us</h2>
+                  <p class="ipsum_text_2">We are located at Nairobi near kill mall</p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                  <h2 class="account_text">Useful Link</h2>
+                  <div class="useful_link">
+                    <ul>
+                      <li><a href="#">Video games</a></li>
+                      <li><a href="#">Remote control</a></li>
+                      <li><a href="#">3d controller</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                <h2 class="account_text">Contact Us</h2>
+                <p class="ipsum_text_2">You can reach us through our email Claireclawis@gmail.com or 
+                    you can contact us through out contact +254759-58150</p>
+                </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <h2 class="account_text">Newsletter</h2>
+            <input type="" class="email_text" placeholder="Enter Your Email" name="Enter Your Email">
+            <button class="subscribr_bt">SUBSCRIBE</button>
+      >
+  </div>
+  <!-- foo    </div>
+        </div>
+      </div>
+      <div class="social_icon">
+        <ul>
+{#          <li><a href="#"><img src="{% static 'images/fb-icon.png' %}"></a></li>#}
+{#          <li><a href="#"><img src="{% static 'images/twitter-icon.png' %}"></a></li>#}
+{#          <li><a href="#"><img src="{% static 'images/linkdin-icon.png' %}"></a></li>#}
+{#          <li><a href="#"><img src="{% static 'images/instagram-icon.png' %}"></a></li/>#}
+        </ul>
+      </div>
+    </divter section end -->
+  <!-- copyright section start -->
+  <div class="copyright_section">
+    <div class="container">
+      <p class="copyright_text">Copyright 2020 All Right Reserved By <a href="https://html.design/"> Developer Claire Nyambura</p>
+    </div>
+  </div>
+  <!-- copyright section end -->
+  <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript --> 
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+        });
+    </script>
+</body>
+</html>
